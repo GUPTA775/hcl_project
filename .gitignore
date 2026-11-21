@@ -1,0 +1,27 @@
+# Python & Django
+backend/venv/
+venv/
+*.pyc
+__pycache__/
+*.sqlite3
+db.sqlite3
+*.log
+
+# Node.js & React Frontend
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+.vite/
+npm-debug.log*
+
+# Environment files with passwords
+backend/.env
+.env
+.env.local
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

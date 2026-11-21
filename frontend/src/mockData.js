@@ -1,0 +1,351 @@
+export const INITIAL_CUSTOMERS = [
+  {
+    id: 1,
+    first_name: "Eleanor",
+    last_name: "Vance",
+    full_name: "Eleanor Vance",
+    email: "eleanor.vance@example.com",
+    phone: "+1 (555) 234-5678",
+    avatar_url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+    loyalty_tier: "Platinum",
+    loyalty_points: 5420,
+    total_spend: 7850.50,
+    preferred_channel: "In-Store",
+    status: "VIP",
+    city: "New York",
+    state: "NY",
+    address: "742 Park Avenue, Apt 11B",
+    tags: ["VIP Elite", "Designer Enthusiast", "Private Preview Invited", "High CLV"],
+    notes: "High-net-worth client. Prefers personal shopping sessions with champagne on Thursday evenings.",
+    created_at: "2026-01-15T10:00:00Z"
+  },
+  {
+    id: 2,
+    first_name: "Marcus",
+    last_name: "Sterling",
+    full_name: "Marcus Sterling",
+    email: "marcus.sterling@example.com",
+    phone: "+1 (555) 345-6789",
+    avatar_url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80",
+    loyalty_tier: "Gold",
+    loyalty_points: 3240,
+    total_spend: 4290.00,
+    preferred_channel: "Online",
+    status: "Active",
+    city: "San Francisco",
+    state: "CA",
+    address: "450 Mission St, Suite 800",
+    tags: ["Tech Exec", "E-Commerce First", "Express Shipping", "Frequent Buyer"],
+    notes: "Frequently buys seasonal wardrobes online. Prefers contactless returns and digital receipts.",
+    created_at: "2026-02-10T14:30:00Z"
+  },
+  {
+    id: 3,
+    first_name: "Sophia",
+    last_name: "Chen",
+    full_name: "Sophia Chen",
+    email: "sophia.chen@example.com",
+    phone: "+1 (555) 456-7890",
+    avatar_url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=256&q=80",
+    loyalty_tier: "Gold",
+    loyalty_points: 2890,
+    total_spend: 3640.25,
+    preferred_channel: "Mobile App",
+    status: "Active",
+    city: "Seattle",
+    state: "WA",
+    address: "1201 3rd Ave",
+    tags: ["App Power User", "Flash Sale Shopper", "Active Weekend Shopper"],
+    notes: "Always orders via iOS App. Responds very well to push notification discounts.",
+    created_at: "2026-03-01T09:15:00Z"
+  },
+  {
+    id: 4,
+    first_name: "Liam",
+    last_name: "O'Connor",
+    full_name: "Liam O'Connor",
+    email: "liam.oconnor@example.com",
+    phone: "+1 (555) 567-8901",
+    avatar_url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&q=80",
+    loyalty_tier: "Silver",
+    loyalty_points: 1450,
+    total_spend: 1820.00,
+    preferred_channel: "In-Store",
+    status: "Active",
+    city: "Chicago",
+    state: "IL",
+    address: "875 N Michigan Ave",
+    tags: ["Footwear Fanatic", "Weekend Shopper", "Loyalty Member"],
+    notes: "Buys luxury sneakers and casual footwear. Interested in athletic collaborations.",
+    created_at: "2026-03-22T16:00:00Z"
+  },
+  {
+    id: 5,
+    first_name: "Aria",
+    last_name: "Montgomery",
+    full_name: "Aria Montgomery",
+    email: "aria.montgomery@example.com",
+    phone: "+1 (555) 678-9012",
+    avatar_url: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=256&q=80",
+    loyalty_tier: "Bronze",
+    loyalty_points: 650,
+    total_spend: 740.00,
+    preferred_channel: "Online",
+    status: "At-Risk",
+    city: "Austin",
+    state: "TX",
+    address: "200 Congress Ave",
+    tags: ["At-Risk", "Dormant 45d", "Discount Seeker"],
+    notes: "No purchases in 55 days. Target with a 20% win-back promotional SMS voucher.",
+    created_at: "2026-04-05T11:45:00Z"
+  },
+  {
+    id: 6,
+    first_name: "Julian",
+    last_name: "Alvarez",
+    full_name: "Julian Alvarez",
+    email: "julian.alvarez@example.com",
+    phone: "+1 (555) 789-0123",
+    avatar_url: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=256&q=80",
+    loyalty_tier: "Platinum",
+    loyalty_points: 6100,
+    total_spend: 9120.00,
+    preferred_channel: "In-Store",
+    status: "VIP",
+    city: "Miami",
+    state: "FL",
+    address: "1111 Lincoln Rd",
+    tags: ["VIP Elite", "Corporate Buyer", "Bespoke Suiting"],
+    notes: "Corporate client. Frequently orders customized team corporate apparel and tailored suits.",
+    created_at: "2026-04-18T13:20:00Z"
+  }
+];
+
+export const INITIAL_ORDERS = [
+  {
+    id: 1,
+    order_number: "RMX-9041",
+    customer: 1,
+    customer_name: "Eleanor Vance",
+    channel: "In-Store POS",
+    store_location: "Manhattan 5th Ave Flagship",
+    total_amount: 1450.00,
+    tax_amount: 128.69,
+    discount_amount: 100.00,
+    status: "Completed",
+    payment_method: "Amex Centurion",
+    items_count: 3,
+    items_detail: [
+      { name: "Merino Wool Double-Breasted Coat", sku: "COAT-01", qty: 1, price: 890.00 },
+      { name: "Silk Jacquard Scarf", sku: "SCARF-09", qty: 1, price: 280.00 },
+      { name: "Leather Chelsea Boots", sku: "BOOT-44", qty: 1, price: 380.00 }
+    ],
+    created_at: "2026-11-19T14:22:00Z"
+  },
+  {
+    id: 2,
+    order_number: "RMX-9042",
+    customer: 2,
+    customer_name: "Marcus Sterling",
+    channel: "Online Store",
+    store_location: "Online Fulfillment Center #1",
+    total_amount: 680.00,
+    tax_amount: 59.50,
+    discount_amount: 0.00,
+    status: "Completed",
+    payment_method: "Apple Pay",
+    items_count: 2,
+    items_detail: [
+      { name: "Tailored Cotton Oxford Shirt (x2)", sku: "SHIRT-OX", qty: 2, price: 240.00 },
+      { name: "Slim Fit Chinos", sku: "PANT-02", qty: 2, price: 200.00 }
+    ],
+    created_at: "2026-11-17T11:05:00Z"
+  },
+  {
+    id: 3,
+    order_number: "RMX-9043",
+    customer: 3,
+    customer_name: "Sophia Chen",
+    channel: "Mobile App",
+    store_location: "Pacific Northwest DC",
+    total_amount: 320.00,
+    tax_amount: 28.00,
+    discount_amount: 30.00,
+    status: "Completed",
+    payment_method: "Visa",
+    items_count: 1,
+    items_detail: [
+      { name: "Urban Tech Commuter Backpack", sku: "BAG-TECH", qty: 1, price: 320.00 }
+    ],
+    created_at: "2026-11-16T19:40:00Z"
+  },
+  {
+    id: 4,
+    order_number: "RMX-9044",
+    customer: 6,
+    customer_name: "Julian Alvarez",
+    channel: "In-Store POS",
+    store_location: "Miami Design District Boutique",
+    total_amount: 2250.00,
+    tax_amount: 157.50,
+    discount_amount: 200.00,
+    status: "Completed",
+    payment_method: "MasterCard",
+    items_count: 4,
+    items_detail: [
+      { name: "Custom Linen Blazer", sku: "BLAZ-MIA", qty: 2, price: 1200.00 },
+      { name: "Handcrafted Suede Loafers", sku: "SHOE-LOAF", qty: 1, price: 450.00 },
+      { name: "Braided Italian Leather Belt", sku: "BELT-ITL", qty: 1, price: 180.00 }
+    ],
+    created_at: "2026-11-14T17:15:00Z"
+  }
+];
+
+export const INITIAL_DEALS = [
+  {
+    id: 1,
+    title: "Corporate Executive Suiting Package (15 Suits)",
+    customer: 6,
+    customer_name: "Julian Alvarez",
+    value: 12500.00,
+    stage: "Proposal",
+    probability: 75,
+    expected_close_date: "2026-12-05",
+    assigned_agent: "Marcus Brody (VIP Clienteling)",
+    priority: "High",
+    notes: "Requested bespoke fabric samples and in-office fitting schedule."
+  },
+  {
+    id: 2,
+    title: "Spring Private Wardrobe Consultation & Refresh",
+    customer: 1,
+    customer_name: "Eleanor Vance",
+    value: 4800.00,
+    stage: "Qualified",
+    probability: 80,
+    expected_close_date: "2026-11-29",
+    assigned_agent: "Sarah Jenkins (Lead Stylist)",
+    priority: "High",
+    notes: "Eleanor looking for full spring collection preview."
+  },
+  {
+    id: 3,
+    title: "Holiday Bulk Gifting - Tech Executive Group",
+    customer: 2,
+    customer_name: "Marcus Sterling",
+    value: 3600.00,
+    stage: "Contacted",
+    probability: 60,
+    expected_close_date: "2026-12-12",
+    assigned_agent: "Sarah Jenkins",
+    priority: "Medium",
+    notes: "Leather goods and tech accessories with monogramming."
+  },
+  {
+    id: 4,
+    title: "New Member VIP Membership Upgrade Concierge",
+    customer: 5,
+    customer_name: "Aria Montgomery",
+    value: 1200.00,
+    stage: "Lead",
+    probability: 35,
+    expected_close_date: "2026-12-20",
+    assigned_agent: "Tyler Ross",
+    priority: "Low",
+    notes: "Inbound inquiry from Instagram ad."
+  },
+  {
+    id: 5,
+    title: "Designer Footwear Capsule Pre-Order",
+    customer: 4,
+    customer_name: "Liam O'Connor",
+    value: 1950.00,
+    stage: "Won",
+    probability: 100,
+    expected_close_date: "2026-11-18",
+    assigned_agent: "Tyler Ross",
+    priority: "Medium",
+    notes: "Pre-order secured with deposit."
+  }
+];
+
+export const INITIAL_TICKETS = [
+  {
+    id: 1,
+    ticket_number: "TCK-1081",
+    customer: 5,
+    customer_name: "Aria Montgomery",
+    subject: "Size exchange request for order RMX-8712",
+    description: "Customer received Medium size instead of Large. Wants express swap before weekend trip.",
+    category: "Return & Refund",
+    priority: "High",
+    status: "In Progress",
+    assigned_to: "Customer Care Team",
+    created_at: "2026-11-20T10:15:00Z"
+  },
+  {
+    id: 2,
+    ticket_number: "TCK-1082",
+    customer: 3,
+    customer_name: "Sophia Chen",
+    subject: "Loyalty points not credited after in-app purchase",
+    description: "Ordered tech backpack 5 days ago, 320 points have not appeared in app balance.",
+    category: "Loyalty Points",
+    priority: "Medium",
+    status: "Open",
+    assigned_to: "Tyler Ross",
+    created_at: "2026-11-19T14:40:00Z"
+  },
+  {
+    id: 3,
+    ticket_number: "TCK-1083",
+    customer: 2,
+    customer_name: "Marcus Sterling",
+    subject: "Tracking number says delivered but package missing",
+    description: "Carrier marked package as delivered to mailroom. Building front desk confirmed safe receipt.",
+    category: "Order Issue",
+    priority: "Medium",
+    status: "Resolved",
+    assigned_to: "Sarah Jenkins",
+    created_at: "2026-11-18T09:20:00Z"
+  }
+];
+
+export const INITIAL_CAMPAIGNS = [
+  {
+    id: 1,
+    name: "VIP Private Autumn Preview Event",
+    channel: "Email",
+    target_tier: "Platinum",
+    status: "Active",
+    discount_code: "VIPPREVIEW25",
+    sent_count: 142,
+    opened_count: 118,
+    conversion_count: 49,
+    scheduled_at: "2026-11-25T18:00:00Z"
+  },
+  {
+    id: 2,
+    name: "Mobile App Flash Sale 24-Hour Pass",
+    channel: "Push",
+    target_tier: "All",
+    status: "Completed",
+    discount_code: "APPOVERDRIVE",
+    sent_count: 4500,
+    opened_count: 2140,
+    conversion_count: 612,
+    scheduled_at: "2026-11-15T12:00:00Z"
+  },
+  {
+    id: 3,
+    name: "At-Risk Winback Concierge SMS",
+    channel: "SMS",
+    target_tier: "Bronze",
+    status: "Active",
+    discount_code: "COMEBACK30",
+    sent_count: 320,
+    opened_count: 295,
+    conversion_count: 42,
+    scheduled_at: "2026-11-22T10:00:00Z"
+  }
+];
